@@ -201,4 +201,34 @@ public class UserService {
 		return user;
 	}
 
+	public List<User> queryUserByUserName(String userName) {
+		System.out.println("aaaaaa");
+		users=dao.queryUserByUserName(userName);
+		if(users!=null){
+			System.out.println(users);
+		}else{
+			System.out.println("不存在此名字的用户");
+		}
+		return users;
+	}
+	
+	
+	public User insertUser(String gender) {
+		user = dao.updateUser(gender);
+		if (user != null) {
+			System.out.println("第一次登录页面更新成功gender....." + gender);
+		}
+		return user;
+	}
+
+	public List<User> queryTop10() {
+		users=dao.queryTop10();
+		if(users!=null){
+			System.out.println(users);
+		}else{
+			System.out.println("不存在此名字的用户");
+		}
+		return users;
+	}
+
 }
