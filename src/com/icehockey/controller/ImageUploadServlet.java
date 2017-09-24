@@ -3,6 +3,9 @@ package com.icehockey.controller;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -73,7 +76,12 @@ public class ImageUploadServlet extends HttpServlet {
 							fileSaveFolder.mkdir();
 						}
 						File tempfile = new File(item.getName());
-						String saveFileName = savePath + File.separator + tempfile.getName();
+						Date date = new Date();
+						DateFormat format = new SimpleDateFormat(
+								"yyyyMMddHHmmss");
+						String time = format.format(date);
+						System.out.println(time);
+						String saveFileName = savePath + File.separator + time+tempfile.getName();
 						System.out.println(saveFileName);
 
 						File uploadedFile = new File(saveFileName);

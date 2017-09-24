@@ -44,29 +44,35 @@
 				<span>KG</span>
 			</div>
 
-			<div data-role="controlgroup" data-type="horizontal" class="btn">
-				<a href="#" onClick="javascript :history.back(-1);"
-					data-ajax="false" data-role="button" data-corners="true"
-					data-transition="slide" class="back"> <span>上一步</span>
-				</a> <a href="#" data-ajax="false" data-role="button"
-					data-corners="true" data-transition="slide" class="next"> <span>下一步</span>
-				</a>
-			</div>
+			
+				<div data-role="controlgroup" data-type="horizontal" class="btn">
+					<a href="#" onClick="javascript :history.back(-1);"
+						data-ajax="false" data-role="button" data-corners="true"
+						data-transition="slide" class="back"> <span>上一步</span>
+					</a> <a href="#" data-ajax="false" data-role="button"
+						data-corners="true" data-transition="slide" class="next"> <span>下一步</span>
+					</a>
+				</div>
+		
 
 			<div class="button">
-				<div class="shouye" onclick="shouyeClick()">
-					<span>首页</span>
-				</div>
-				<div class="zhanshu" onclick="zhanshuClick()">
-					<span>战术</span>
-				</div>
-				<div class="zhandui" onclick="zhanduiClick()">
-					<span>战队</span>
-				</div>
-				<div class="wode" onclick="wodeClick()">
-					<span>我的</span>
-				</div>
-			</div>
+							<div class="shouye" onclick="shouyeClick()">
+								<span class="ch">首页</span>
+								<span class="en">	Home</span>
+							</div>
+							<div  class="zhanshu" onclick="zhanshuClick()">
+								<span class="ch">战术</span>
+								<span class="en">Tactical</span>
+							</div>
+							<div  class="zhandui" onclick="zhanduiClick()">
+								<span class="ch">战队</span>
+								<span class="en">Team</span>
+							</div>
+							<div class="wode" onclick="wodeClick()">
+								<span class="ch">我的</span>
+								<span class="en">Mine</span>
+							</div>
+				   </div>	
 
 		</div>
 
